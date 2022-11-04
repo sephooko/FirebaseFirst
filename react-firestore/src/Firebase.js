@@ -1,16 +1,19 @@
-import * as firebase from 'firebase';
-import firestore from 'firebase/firestore';
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/firestore';
+import 'firebase/compat/auth';
+// import firestore from 'firebase/firestore';
 
 const settings = {timestampslnSnapshots: true};
 
 const config = {
-    apiKey:"YOUR_API_KEY",
-    authDomain:"YOUR_AUTH_DOMAIN",
-    databaseURL:"YOUR_DATABASE_URL",
-    projectID: "YOUR_PROJETCT_ID",
-    storageBucke:"YOUR_STORAGE_BUCKET",
-    messagingSendID:"YOUR_MESSAGING_ID"
-};
+    apiKey: "AIzaSyDxVqGM8vtjT7Q8nswcXh57fsVaGZC7jMk",
+    authDomain: "fir-app-5d9ac.firebaseapp.com",
+    projectId: "fir-app-5d9ac",
+    storageBucket: "fir-app-5d9ac.appspot.com",
+    messagingSenderId: "974615944212",
+    appId: "1:974615944212:web:394138477eb4055ed85b01",
+    measurementId: "G-TCTPWZ3V46"
+  };
 firebase.initializeApp(config);
 
 firebase.firestore().settings(settings);
