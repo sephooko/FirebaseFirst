@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import './App.css';
 import firebase from './Firebase';
 
+
 // function App() {
 //   return (
 //     <div className="App">
@@ -54,7 +55,7 @@ class App extends Component{
   componentDidMount(){
     this.unsubscribe = this.ref.onSnapshot(this.onCollectionUpdate);
   }
-  
+
   render(){
     return(
       <div class="container">

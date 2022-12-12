@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import firebase from '../Firebase';
 import { Link } from 'react-router-dom';
 
-class Show extends Compoinent {
+class Show extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -42,7 +42,7 @@ class Show extends Compoinent {
                     {this.state.board.title}
                     </h3>
                     </div>
-                    
+
                     <div class="panel-body">
                     <dl>
                     <dt>Description:</dt>

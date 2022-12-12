@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import firebase from '../Firebase';
 import { Link } from 'react-router-dom'
 
-class Edit extends Compinent{
+class Edit extends Component{
     constructor(props) {
         super(props);
         this.state = {
@@ -68,17 +68,17 @@ class Edit extends Compinent{
             <form onSubmit={this.onSubmit}>
             <div class="form-group">
             <label for="title">Title:</label>
-            <input type="text" class="form-control" name="title" value={this.state.title} 
+            <input type="text" class="form-control" name="title" value={this.state.title}
         onChange={this.onChange} placeholder="Title" />
             </div>
             <div class="form-group">
             <label for="description">Description:</label>
-            <input type="text" class="form-control" name="description" 
+            <input type="text" class="form-control" name="description"
         value={this.state.description} onChange={this.onChange} placeholder="Description" />
             </div>
             <div class="form-group">
             <label for="author">Author:</label>
-            <input type="text" class="form-control" name="author" value={this.state.author} 
+            <input type="text" class="form-control" name="author" value={this.state.author}
         onChange={this.onChange} placeholder="Author" />
             </div>
             <button type="submit" class="btn btn-success">Submit</button>
@@ -87,6 +87,6 @@ class Edit extends Compinent{
             </div>
             </div>
         );
-    }   
+    }
 }
 export default Edit;
